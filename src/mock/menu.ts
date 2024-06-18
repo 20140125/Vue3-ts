@@ -1,168 +1,219 @@
-[
+import { AsideMenuLevel } from "@/constant/aside-menu";
+import {
+  AddAuthParams,
+  DeleteAuthParams,
+  ListAuthParams,
+  QueryAuthParams,
+  UpdateAuthParams,
+} from "@/components/auth";
+
+export const MENU_LISTS = [
   {
-    "id": 1,
-    "name": "权限管理",
-    "level": 0,
-    "path": "1",
-    "href": "",
-    "children": [
+    asideMenuId: 1,
+    asideMenuName: "权限管理",
+    asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P1,
+    asideMenuPath: "",
+    asideMenuApiUrl: "",
+    children: [
       {
-        "id": 11,
-        "name": "角色列表",
-        "level": 1,
-        "path": "1-11",
-        "href": "/api/v1/list-role",
-        "children": [
+        asideMenuId: 11,
+        asideMenuName: "角色列表",
+        asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P2,
+        asideMenuPath: "/admin/role/lists",
+        asideMenuApiUrl: "/api/v1/listRole",
+        children: [
           {
-            "id": 111,
-            "name": "角色添加",
-            "level": 2,
-            "path": "1-11-111",
-            "href": "/api/v1/add-role"
+            asideMenuId: 111,
+            asideMenuName: "角色添加",
+            asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
+            asideMenuPath: "/admin/role/add",
+            asideMenuApiUrl: "/api/v1/addRole",
           },
           {
-            "id": 112,
-            "name": "角色修改",
-            "level": 2,
-            "path": "1-11-112",
-            "href": "/api/v1/update-role"
+            asideMenuId: 112,
+            asideMenuName: "角色修改",
+            asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
+            asideMenuPath: "/admin/role/update",
+            asideMenuApiUrl: "/api/v1/updateRole",
           },
           {
-            "id": 113,
-            "name": "角色删除",
-            "level": 2,
-            "path": "1-11-113",
-            "href": "/api/v1/remove-role"
+            asideMenuId: 113,
+            asideMenuName: "角色删除",
+            asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
+            asideMenuPath: "/admin/role/delete",
+            asideMenuApiUrl: "/api/v1/deleteRole",
           },
           {
-            "id": 114,
-            "name": "角色查询",
-            "level": 2,
-            "path": "1-11-114",
-            "href": "/api/v1/query-role"
-          }
-        ]
+            asideMenuId: 114,
+            asideMenuName: "角色查询",
+            asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
+            asideMenuPath: "/admin/role/query",
+            asideMenuApiUrl: "/api/v1/queryRole",
+          },
+        ],
       },
       {
-        "id": 12,
-        "name": "用户列表",
-        "level": 1,
-        "path": "1-12",
-        "href": "/api/v1/list-user",
-        "children": [
+        asideMenuId: 12,
+        asideMenuName: "用户列表",
+        asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P2,
+        asideMenuPath: "/admin/user/lists",
+        asideMenuApiUrl: "/api/v1/listUser",
+        children: [
           {
-            "id": 121,
-            "name": "用户添加",
-            "level": 2,
-            "path": "1-12-121",
-            "href": "/api/v1/add-user"
+            asideMenuId: 121,
+            asideMenuName: "用户添加",
+            asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
+            asideMenuPath: "/admin/user/add",
+            asideMenuApiUrl: "/api/v1/addUser",
           },
           {
-            "id": 122,
-            "name": "用户修改",
-            "level": 2,
-            "path": "1-12-122",
-            "href": "/api/v1/update-user"
+            asideMenuId: 122,
+            asideMenuName: "用户修改",
+            asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
+            asideMenuPath: "/admin/user/update",
+            asideMenuApiUrl: "/api/v1/updateUser",
           },
           {
-            "id": 123,
-            "name": "用户删除",
-            "level": 2,
-            "path": "1-12-123",
-            "href": "/api/v1/remove-user"
+            asideMenuId: 123,
+            asideMenuName: "用户删除",
+            asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
+            asideMenuPath: "/admin/user/delete",
+            asideMenuApiUrl: "/api/v1/deleteUser",
           },
           {
-            "id": 124,
-            "name": "用户查询",
-            "level": 2,
-            "path": "1-12-124",
-            "href": "/api/v1/query-user"
-          }
-        ]
+            asideMenuId: 124,
+            asideMenuName: "用户查询",
+            asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
+            asideMenuPath: "/admin/user/query",
+            asideMenuApiUrl: "/api/v1/queryUser",
+          },
+        ],
       },
       {
-        "id": 13,
-        "name": "权限列表",
-        "level": 1,
-        "path": "1-13",
-        "href": "/api/v1/list-auth",
-        "children": [
+        asideMenuId: 13,
+        asideMenuName: "权限列表",
+        asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P2,
+        asideMenuPath: "/admin/auth/lists",
+        asideMenuApiUrl: "/api/v1/listAuth",
+        queryParams: ListAuthParams,
+        children: [
           {
-            "id": 131,
-            "name": "权限添加",
-            "level": 2,
-            "path": "1-13-131",
-            "href": "/api/v1/add-auth"
+            asideMenuId: 131,
+            asideMenuName: "权限添加",
+            asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
+            asideMenuPath: "/admin/auth/add",
+            asideMenuApiUrl: "/api/v1/addAuth",
+            queryParams: AddAuthParams,
           },
           {
-            "id": 132,
-            "name": "权限修改",
-            "level": 2,
-            "path": "1-13-132",
-            "href": "/api/v1/update-auth"
+            asideMenuId: 132,
+            asideMenuName: "权限修改",
+            asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
+            asideMenuPath: "/admin/auth/update",
+            asideMenuApiUrl: "/api/v1/updateAuth",
+            queryParams: UpdateAuthParams,
           },
           {
-            "id": 133,
-            "name": "权限删除",
-            "level": 2,
-            "path": "1-12-133",
-            "href": "/api/v1/remove-auth"
+            asideMenuId: 133,
+            asideMenuName: "权限删除",
+            asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
+            asideMenuPath: "/admin/auth/delete",
+            asideMenuApiUrl: "/api/v1/deleteAuth",
+            queryParams: DeleteAuthParams,
           },
           {
-            "id": 134,
-            "name": "权限查询",
-            "level": 2,
-            "path": "1-13-134",
-            "href": "/v1/query-auth"
-          }
-        ]
-      }
-    ]
+            asideMenuId: 134,
+            asideMenuName: "权限查询",
+            asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
+            asideMenuPath: "/admin/auth/query",
+            asideMenuApiUrl: "/v1/queryAuth",
+            queryParams: QueryAuthParams,
+          },
+        ],
+      },
+    ],
   },
   {
-    "id": 2,
-    "name": "系统管理",
-    "level": 0,
-    "path": "2",
-    "href": "",
-    "children": [
+    asideMenuId: 2,
+    asideMenuName: "系统管理",
+    asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P1,
+    asideMenuPath: "",
+    asideMenuApiUrl: "",
+    children: [
       {
-        "id": 21,
-        "name": "日志管理",
-        "level": 1,
-        "path": "2-21",
-        "href": "/api/v1/list-system-log",
-        "children": [
+        asideMenuId: 21,
+        asideMenuName: "日志列表",
+        asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P2,
+        asideMenuPath: "/admin/system-log/lists",
+        asideMenuApiUrl: "/api/v1/listSystemLog",
+        children: [
           {
-            "id": 211,
-            "name": "日志添加",
-            "level": 2,
-            "path": "2-21-211",
-            "href": "/api/v1/add-system-log"
+            asideMenuId: 211,
+            asideMenuName: "日志添加",
+            asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
+            asideMenuPath: "/admin/system-log/add",
+            asideMenuApiUrl: "/api/v1/addSystemLog",
           },
           {
-            "id": 212,
-            "name": "日志修改",
-            "level": 2,
-            "path": "2-21-212",
-            "href": "/api/v1/update-system-log"
+            asideMenuId: 212,
+            asideMenuName: "日志修改",
+            asideMenuLevel: 2,
+            asideMenuPath: "/admin/system-log/update",
+            asideMenuApiUrl: "/api/v1/updateSystemLog",
           },
           {
-            "id": 213,
-            "name": "日志删除",
-            "level": 2,
-            "path": "2-21-213",
-            "href": "/api/v1/remove-system-log"
+            asideMenuId: 213,
+            asideMenuName: "日志删除",
+            asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
+            asideMenuPath: "/admin/system-log/delete",
+            asideMenuApiUrl: "/api/v1/deleteSystemLog",
           },
           {
-            "id": 214,
-            "name": "日志查询",
-            "level": 2,
-            "path": "2-21-214",
-            "href": "/api/v1/query-system-log"
-          }
-        ]
-      }
-    ]
-  }
-]
+            asideMenuId: 214,
+            asideMenuName: "日志查询",
+            asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
+            asideMenuPath: "/admin/system-log/query",
+            asideMenuApiUrl: "/api/v1/querySystemLog",
+          },
+        ],
+      },
+      {
+        asideMenuId: 22,
+        asideMenuName: "配置列表",
+        asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P2,
+        asideMenuPath: "/admin/system-config/lists",
+        asideMenuApiUrl: "/api/v1/listSystemConfig",
+        children: [
+          {
+            asideMenuId: 221,
+            asideMenuName: "配置添加",
+            asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
+            asideMenuPath: "/admin/system-config/add",
+            asideMenuApiUrl: "/api/v1/addSystemConfig",
+          },
+          {
+            asideMenuId: 222,
+            asideMenuName: "配置修改",
+            asideMenuLevel: 2,
+            asideMenuPath: "/admin/system-config/update",
+            asideMenuApiUrl: "/api/v1/updateSystemConfig",
+          },
+          {
+            asideMenuId: 223,
+            asideMenuName: "配置删除",
+            asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
+            asideMenuPath: "/admin/system-log/delete",
+            asideMenuApiUrl: "/api/v1/deleteSystemConfig",
+          },
+          {
+            asideMenuId: 224,
+            asideMenuName: "配置查询",
+            asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
+            asideMenuPath: "/admin/system-config/query",
+            asideMenuApiUrl: "/api/v1/querySystemConfig",
+          },
+        ],
+      },
+    ],
+  },
+];

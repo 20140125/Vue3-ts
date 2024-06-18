@@ -7,6 +7,7 @@
     "moduleResolution": "node",
     "skipLibCheck": true,
     "esModuleInterop": true,
+    "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": true,
@@ -25,7 +26,8 @@
       "dom",
       "dom.iterable",
       "scripthost"
-    ]
+    ],
+    "experimentalDecorators": true
   },
   "include": [
     "src/**/*.ts",
@@ -36,5 +38,11 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "vueCompilerOptions": {
+    "target": 2,
+    "extensions": [
+      ".vue"
+    ]
+  }
 }

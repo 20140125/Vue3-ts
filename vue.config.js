@@ -1,4 +1,9 @@
-const { defineConfig } = require("@vue/cli-service");
-module.exports = defineConfig({
-  transpileDependencies: true,
+require('ts-node').register({
+  transpileOnly: true,
+  compilerOptions: {
+    target: 'es2017',
+    module: 'commonjs',
+  },
 });
+
+module.exports = require('./vue.config.ts').default;
