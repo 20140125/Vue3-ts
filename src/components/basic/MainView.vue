@@ -33,7 +33,6 @@ const storeStateCurrentTab = computed(() => store.state.currentTab);
  */
 const tabRemoveHandler = (targetName: string) => {
   store.dispatch("deleteTabs", targetName);
-  tabChangeHandler(targetName);
 };
 
 /**

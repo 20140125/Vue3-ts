@@ -1,10 +1,11 @@
 import { createStore } from "vuex";
 import _ from "lodash";
 import { checkObjectExistsInArray } from "@/utils/tools";
+import router from "@/router";
 
 export default createStore({
   state: {
-    tabs: [{ title: "MainView", name: "/admin/index" }],
+    tabs: [{ title: "欢迎页", name: "/admin/index" }],
     currentTab: "/admin/index",
   },
   getters: {
@@ -63,6 +64,7 @@ export default createStore({
           tabs: newTabs,
           currentTab: nextTab.name,
         });
+        router.push({ path: nextTab.name });
       } catch (error) {
         commit("UPDATE_MUTATIONS", { error: error });
       }

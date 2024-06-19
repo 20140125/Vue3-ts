@@ -1,4 +1,4 @@
-import { AsideMenuLevel } from "@/constant/aside-menu";
+import { AsideMenuLevel, AsideMenuStatus } from "@/constant/aside-menu";
 import {
   AddAuthParams,
   DeleteAuthParams,
@@ -14,6 +14,7 @@ export const MENU_LISTS = [
     asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P1,
     asideMenuPath: "",
     asideMenuApiUrl: "",
+    asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
     children: [
       {
         asideMenuId: 11,
@@ -21,6 +22,8 @@ export const MENU_LISTS = [
         asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P2,
         asideMenuPath: "/admin/role/lists",
         asideMenuApiUrl: "/api/v1/listRole",
+        asideMenuAuthName: "查询",
+        asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
         children: [
           {
             asideMenuId: 111,
@@ -28,6 +31,8 @@ export const MENU_LISTS = [
             asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
             asideMenuPath: "/admin/role/add",
             asideMenuApiUrl: "/api/v1/addRole",
+            asideMenuAuthName: "新增",
+            asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
           },
           {
             asideMenuId: 112,
@@ -35,6 +40,8 @@ export const MENU_LISTS = [
             asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
             asideMenuPath: "/admin/role/update",
             asideMenuApiUrl: "/api/v1/updateRole",
+            asideMenuAuthName: "编辑",
+            asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
           },
           {
             asideMenuId: 113,
@@ -42,6 +49,8 @@ export const MENU_LISTS = [
             asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
             asideMenuPath: "/admin/role/delete",
             asideMenuApiUrl: "/api/v1/deleteRole",
+            asideMenuAuthName: "删除",
+            asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
           },
           {
             asideMenuId: 114,
@@ -49,6 +58,8 @@ export const MENU_LISTS = [
             asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
             asideMenuPath: "/admin/role/query",
             asideMenuApiUrl: "/api/v1/queryRole",
+            asideMenuAuthName: "查询",
+            asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
           },
         ],
       },
@@ -58,6 +69,8 @@ export const MENU_LISTS = [
         asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P2,
         asideMenuPath: "/admin/user/lists",
         asideMenuApiUrl: "/api/v1/listUser",
+        asideMenuAuthName: "查询",
+        asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
         children: [
           {
             asideMenuId: 121,
@@ -65,6 +78,8 @@ export const MENU_LISTS = [
             asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
             asideMenuPath: "/admin/user/add",
             asideMenuApiUrl: "/api/v1/addUser",
+            asideMenuAuthName: "新增",
+            asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
           },
           {
             asideMenuId: 122,
@@ -72,6 +87,8 @@ export const MENU_LISTS = [
             asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
             asideMenuPath: "/admin/user/update",
             asideMenuApiUrl: "/api/v1/updateUser",
+            asideMenuAuthName: "编辑",
+            asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
           },
           {
             asideMenuId: 123,
@@ -79,6 +96,8 @@ export const MENU_LISTS = [
             asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
             asideMenuPath: "/admin/user/delete",
             asideMenuApiUrl: "/api/v1/deleteUser",
+            asideMenuAuthName: "删除",
+            asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
           },
           {
             asideMenuId: 124,
@@ -86,6 +105,8 @@ export const MENU_LISTS = [
             asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
             asideMenuPath: "/admin/user/query",
             asideMenuApiUrl: "/api/v1/queryUser",
+            asideMenuAuthName: "查询",
+            asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
           },
         ],
       },
@@ -96,6 +117,8 @@ export const MENU_LISTS = [
         asideMenuPath: "/admin/auth/lists",
         asideMenuApiUrl: "/api/v1/listAuth",
         queryParams: ListAuthParams,
+        asideMenuAuthName: "查询",
+        asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
         children: [
           {
             asideMenuId: 131,
@@ -104,6 +127,8 @@ export const MENU_LISTS = [
             asideMenuPath: "/admin/auth/add",
             asideMenuApiUrl: "/api/v1/addAuth",
             queryParams: AddAuthParams,
+            asideMenuAuthName: "新增",
+            asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
           },
           {
             asideMenuId: 132,
@@ -112,6 +137,8 @@ export const MENU_LISTS = [
             asideMenuPath: "/admin/auth/update",
             asideMenuApiUrl: "/api/v1/updateAuth",
             queryParams: UpdateAuthParams,
+            asideMenuAuthName: "编辑",
+            asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
           },
           {
             asideMenuId: 133,
@@ -120,6 +147,8 @@ export const MENU_LISTS = [
             asideMenuPath: "/admin/auth/delete",
             asideMenuApiUrl: "/api/v1/deleteAuth",
             queryParams: DeleteAuthParams,
+            asideMenuAuthName: "删除",
+            asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
           },
           {
             asideMenuId: 134,
@@ -128,6 +157,8 @@ export const MENU_LISTS = [
             asideMenuPath: "/admin/auth/query",
             asideMenuApiUrl: "/v1/queryAuth",
             queryParams: QueryAuthParams,
+            asideMenuAuthName: "查询",
+            asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
           },
         ],
       },
@@ -139,6 +170,7 @@ export const MENU_LISTS = [
     asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P1,
     asideMenuPath: "",
     asideMenuApiUrl: "",
+    asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
     children: [
       {
         asideMenuId: 21,
@@ -146,6 +178,8 @@ export const MENU_LISTS = [
         asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P2,
         asideMenuPath: "/admin/system-log/lists",
         asideMenuApiUrl: "/api/v1/listSystemLog",
+        asideMenuAuthName: "查询",
+        asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
         children: [
           {
             asideMenuId: 211,
@@ -153,6 +187,8 @@ export const MENU_LISTS = [
             asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
             asideMenuPath: "/admin/system-log/add",
             asideMenuApiUrl: "/api/v1/addSystemLog",
+            asideMenuAuthName: "新增",
+            asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
           },
           {
             asideMenuId: 212,
@@ -160,6 +196,8 @@ export const MENU_LISTS = [
             asideMenuLevel: 2,
             asideMenuPath: "/admin/system-log/update",
             asideMenuApiUrl: "/api/v1/updateSystemLog",
+            asideMenuAuthName: "编辑",
+            asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_OFFLINE,
           },
           {
             asideMenuId: 213,
@@ -167,6 +205,8 @@ export const MENU_LISTS = [
             asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
             asideMenuPath: "/admin/system-log/delete",
             asideMenuApiUrl: "/api/v1/deleteSystemLog",
+            asideMenuAuthName: "删除",
+            asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
           },
           {
             asideMenuId: 214,
@@ -174,6 +214,8 @@ export const MENU_LISTS = [
             asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
             asideMenuPath: "/admin/system-log/query",
             asideMenuApiUrl: "/api/v1/querySystemLog",
+            asideMenuAuthName: "查询",
+            asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
           },
         ],
       },
@@ -183,6 +225,8 @@ export const MENU_LISTS = [
         asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P2,
         asideMenuPath: "/admin/system-config/lists",
         asideMenuApiUrl: "/api/v1/listSystemConfig",
+        asideMenuAuthName: "查询",
+        asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
         children: [
           {
             asideMenuId: 221,
@@ -190,6 +234,8 @@ export const MENU_LISTS = [
             asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
             asideMenuPath: "/admin/system-config/add",
             asideMenuApiUrl: "/api/v1/addSystemConfig",
+            asideMenuAuthName: "新增",
+            asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
           },
           {
             asideMenuId: 222,
@@ -197,6 +243,8 @@ export const MENU_LISTS = [
             asideMenuLevel: 2,
             asideMenuPath: "/admin/system-config/update",
             asideMenuApiUrl: "/api/v1/updateSystemConfig",
+            asideMenuAuthName: "编辑",
+            asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
           },
           {
             asideMenuId: 223,
@@ -204,6 +252,8 @@ export const MENU_LISTS = [
             asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
             asideMenuPath: "/admin/system-log/delete",
             asideMenuApiUrl: "/api/v1/deleteSystemConfig",
+            asideMenuAuthName: "删除",
+            asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
           },
           {
             asideMenuId: 224,
@@ -211,6 +261,8 @@ export const MENU_LISTS = [
             asideMenuLevel: AsideMenuLevel.ASIDE_MENU_LEVEL_P3,
             asideMenuPath: "/admin/system-config/query",
             asideMenuApiUrl: "/api/v1/querySystemConfig",
+            asideMenuAuthName: "查询",
+            asideMenuStatus: AsideMenuStatus.ASIDE_MENU_STATUS_ONLINE,
           },
         ],
       },
