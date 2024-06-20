@@ -45,16 +45,14 @@ for (const item of prettierLog.split(/[\r\n]/)) {
       19: errorLine,
       20: 0,
       21: errorType,
-      22: "",
+      22: errorInfo[1].replace(lineRegRex, "").trim(),
     };
     if (/\[error\]/g.test(item)) {
       data[18] = errorInfo[0].replace(/\[error\]/g, "").trim();
       data[20] = 1;
-      data[22] = errorInfo[1].replace(lineRegRex, "").trim();
-    } else {
+    } else if (/\[warning\]/g.test(item)) {
       data[18] = errorInfo[0].replace(/\[warning\]/g, "").trim();
       data[20] = 2;
-      data[22] = errorInfo[1].replace(lineRegRex, "").trim();
     }
     reportLog(data);
   }
