@@ -14,3 +14,8 @@ export interface Menu {
 export interface MenuItem extends Menu {
   children?: Menu[];
 }
+
+export interface LabelValue {
+  label: string;
+  value: number;
+}

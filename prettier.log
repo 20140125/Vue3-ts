@@ -1,0 +1,241 @@
+[error] src/htdocs/sinclude/wxpay/core/mmpayerrheader.html: SyntaxError: Unexpected closing tag "li". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags (22:9)
+[error]   20 |           <li><a href="//boss.cm.com/mtp/orderoperation/errorHandle">差错补单</a></li>
+[error]   21 |         </ul>-->
+[error] > 22 |         </li>
+[error]      |         ^^^^^
+[error]   23 |             </ul>
+[error]   24 |              <ul class="nav pull-right">
+[error]   25 |               <li class="active">
+[error] src/module/application/errors/error_404.ts: SyntaxError: '>' expected. (2:11)
+[error]   1 | // [Beginning of Emitter: Convert AST to TypeScript code
+[error] > 2 | <!DOCTYPE html>
+[error]     |           ^
+[error]   3 | <html lang="en">
+[error]   4 | <head>
+[error]   5 | <title>404 Page Not Found</title>
+[error] src/module/application/errors/error_db.ts: SyntaxError: '>' expected. (2:11)
+[error]   1 | // [Beginning of Emitter: Convert AST to TypeScript code
+[error] > 2 | <!DOCTYPE html>
+[error]     |           ^
+[error]   3 | <html lang="en">
+[error]   4 | <head>
+[error]   5 | <title>Database Error</title>
+[error] src/module/application/errors/error_general.ts: SyntaxError: '>' expected. (2:11)
+[error]   1 | // [Beginning of Emitter: Convert AST to TypeScript code
+[error] > 2 | <!DOCTYPE html>
+[error]     |           ^
+[error]   3 | <html lang="en">
+[error]   4 | <head>
+[error]   5 | <title>Error</title>
+[error] src/module/application/errors/error_php.ts: SyntaxError: '>' expected. (2:6)
+[error]   1 | // [Beginning of Emitter: Convert AST to TypeScript code
+[error] > 2 | <div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+[error]     |      ^
+[error]   3 |
+[error]   4 | <h4>A PHP Error was encountered</h4>
+[error]   5 |
+[error] src/module/application/libraries/svrkit/mmpaygitgateway/mmpay_comm/service_export_gen/wxpay/aggr_risk/comm/proto/mmpayxaggr_mmpayriskaggr.ts: SyntaxError: Hexadecimal digit expected. (527:27)
+[error]   525 | $f = new DrSlump.Protobuf.Field();
+[error]   526 | $f.number = 2009355;
+[error] > 527 | $f.name = "mmpayriskaggr\unblock_action";
+[error]       |                           ^
+[error]   528 | $f.type = DrSlump.Protobuf.TYPE_MESSAGE;
+[error]   529 | $f.rule = DrSlump.Protobuf.RULE_OPTIONAL;
+[error]   530 | $f.reference = "\mmpayriskaggr\UnblockActionOption";
+[error] src/module/application/libraries/third/PHPExcel/Calculation/DateTime.ts: SyntaxError: ';' expected. (511:31)
+[error]   509 | return <number>$excelDateValue;
+[error]   510 | case PHPExcel_Calculation_Functions.RETURNDATE_PHP_NUMERIC:
+[error] > 511 | return <integer>$phpDateValue = PHPExcel_Shared_Date.ExcelToPHP($excelDateValue + 25569) - 3600;
+[error]       |                               ^
+[error]   512 | case PHPExcel_Calculation_Functions.RETURNDATE_PHP_OBJECT:
+[error]   513 | return new DateTime("1900-01-01 " + $PHPDateArray["hour"] + ":" + $PHPDateArray["minute"] + ":" + $PHPDateArray["second"]);
+[error]   514 | }
+[error] src/module/application/libraries/third/PHPExcel/Reader/Excel5.ts: SyntaxError: Identifier expected. (212:7)
+[error]   210 | case PHPExcel_Reader_Excel5.XLS_TYPE_EOF:
+[error]   211 | this.readDefault();
+[error] > 212 | break 2;
+[error]       |       ^
+[error]   213 | default:
+[error]   214 | this.readDefault();
+[error]   215 | break;
+[error] src/module/application/libraries/third/PHPExcel/Writer/Excel5.ts: SyntaxError: Identifier expected. (378:10)
+[error]   376 | break;
+[error]   377 | default:
+[error] > 378 | continue 2;
+[error]       |          ^
+[error]   379 | }
+[error]   380 |
+[error]   381 | $blip = new PHPExcel_Shared_Escher_DggContainer_BstoreContainer_BSE_Blip();
+[error] src/module/application/views/errors/cli/error_exception.ts: SyntaxError: Unexpected keyword or identifier. (7:1)
+[error]    5 | export var BASEPATH;
+[error]    6 | import {defined, get_class, isset, realpath, strpos} from "@util/php-builtin";
+[error] >  7 | An uncaught Exception was encountered
+[error]      | ^
+[error]    8 |
+[error]    9 | Type:        ;
+[error]   10 | console.log(get_class($exception), "\n");
+[error] src/module/application/views/errors/cli/error_php.ts: SyntaxError: Unexpected keyword or identifier. (6:1)
+[error]   4 | export var BASEPATH;
+[error]   5 | import {debug_backtrace, defined, isset, realpath, strpos} from "@util/php-builtin";
+[error] > 6 | A PHP Error was encountered
+[error]     | ^
+[error]   7 |
+[error]   8 | Severity:    ;
+[error]   9 | console.log($severity, "\n");
+[error] src/module/application/views/errors/html/error_404.ts: SyntaxError: '>' expected. (2:11)
+[error]   1 | // [Beginning of Emitter: Convert AST to TypeScript code
+[error] > 2 | <!DOCTYPE html>
+[error]     |           ^
+[error]   3 | <html lang="en">
+[error]   4 | <head>
+[error]   5 | <meta charset="utf-8">
+[error] src/module/application/views/errors/html/error_db.ts: SyntaxError: '>' expected. (2:11)
+[error]   1 | // [Beginning of Emitter: Convert AST to TypeScript code
+[error] > 2 | <!DOCTYPE html>
+[error]     |           ^
+[error]   3 | <html lang="en">
+[error]   4 | <head>
+[error]   5 | <meta charset="utf-8">
+[error] src/module/application/views/errors/html/error_exception.ts: SyntaxError: '>' expected. (7:6)
+[error]    5 | export var BASEPATH;
+[error]    6 | import {defined, get_class, isset, realpath, strpos} from "@util/php-builtin";
+[error] >  7 | <div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+[error]      |      ^
+[error]    8 |
+[error]    9 | <h4>An uncaught Exception was encountered</h4>
+[error]   10 |
+[error] src/module/application/views/errors/html/error_general.ts: SyntaxError: '>' expected. (2:11)
+[error]   1 | // [Beginning of Emitter: Convert AST to TypeScript code
+[error] > 2 | <!DOCTYPE html>
+[error]     |           ^
+[error]   3 | <html lang="en">
+[error]   4 | <head>
+[error]   5 | <meta charset="utf-8">
+[error] src/module/application/views/html/vpage_bill_download_bill_page_download.html: SyntaxError: Opening tag "script" not terminated. (16:4)
+[error]   14 | 		};
+[error]   15 | 	</script>
+[error] > 16 |   	<script charset=UTF-8 src=https://wx.gtimg.com/static/cdn/wxpay-fe-report/report/report.min.0.0.44.js></script>
+[error]      |   	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[error]   17 |     <link href=https://td.cdn-go.cn/wechat_pay_system_merchant_bill/c3fc6788/css/chunk-6fbf5775.fb6737a5.css rel=prefetch>
+[error]   18 |     <link href=https://td.cdn-go.cn/wechat_pay_system_merchant_bill/c3fc6788/js/chunk-6fbf5775.f1ec4539.js rel=prefetch>
+[error]   19 |     <link href=https://td.cdn-go.cn/wechat_pay_system_merchant_bill/c3fc6788/css/chunk-vendors.d118f647.css rel=preload as=style>
+[error] src/system/ci-system-v3/core/compat/standard.ts: SyntaxError: Octal escape sequences are not allowed. Use the syntax '\x0d'. (354:29)
+[error]   352 | $length = (extension_loaded("mbstring") && ini_get("mbstring.func_overload")) ? mb_strlen($str, "8bit") : strlen($str);
+[error]   353 | while($length-- ){
+[error] > 354 | if((($c = $str[$i++ ]) === "\015") && isset($str[$i]) && ($str[$i] === "\012") && $length > 0)
+[error]       |                             ^
+[error]   355 | {
+[error]   356 | $output += "\015" + $str[$i++ ];
+[error]   357 | $length-- ;
+[error] src/system/ci-system-v3/core/Output.ts: SyntaxError: ')' expected. (323:15)
+[error]   321 |
+[error]   322 |     $cache_path += md5($uri);
+[error] > 323 |     if ((!$fp = fopen($cache_path, 'w+b'))) {
+[error]       |               ^
+[error]   324 |       log_message('error', 'Unable to write cache file: ' + $cache_path);
+[error]   325 |       return;
+[error]   326 |     }
+[error] src/system/ci-system-v3/core/Security.ts: SyntaxError: Octal escape sequences are not allowed. Use the syntax '\x22'. (212:81)
+[error]   210 |
+[error]   211 | unset($original);
+[error] > 212 | $pattern = "#" + "<((?<slash>/*\s*)(?<tagName>[a-z0-9]+)(?=[^a-z0-9]|$)" + "[^\s\042\047a-z0-9>/=]*" + "(?<attributes>(?:[\s\042\047/=]*" + "[^\s\042\047>/=]+" + "(?:\s*=" + "(?:[^\s\042\047=><`]+|\s*\042[^\042]*\042|\s*\047[^\047]*\047|\s*(?U:[^\s\042\047=><`]*))" + ")?" + ")*)" + "[^>]*)(?<closeTag>\>)?#isS";
+[error]       |                                                                                 ^
+[error]   213 | do
+[error]   214 | {
+[error]   215 | $old_str = $str;
+[error] src/system/ci-system-v3/helpers/date_helper.ts: SyntaxError: Octal escape sequences are not allowed. Use the syntax '\x20'. (449:27)
+[error]   447 | }
+[error]   448 |
+[error] > 449 | $datestr = preg_replace("/\040+/", " ", trim($datestr));
+[error]       |                           ^
+[error]   450 | if( !preg_match("/^(\d{2}|\d{4})\-[0-9]{1,2}\-[0-9]{1,2}\s[0-9]{1,2}:[0-9]{1,2}(?::[0-9]{1,2})?(?:\s[AP]M)?$/i", $datestr))
+[error]   451 | {
+[error]   452 | return false;
+[error] src/system/ci-system-v3/helpers/file_helper.ts: SyntaxError: ')' expected. (103:63)
+[error]   101 | flock($fp, LOCK_EX);
+[error]   102 | for($written = 0;
+[error] > 103 | $result = $written,$length = strlen($data); $written < $length; $written += $result){
+[error]       |                                                               ^
+[error]   104 | if(($result = fwrite($fp, substr($data, $written))) === false)
+[error]   105 | {
+[error]   106 | break;
+[error] src/system/ci-system-v3/helpers/inflector_helper.ts: SyntaxError: Octal escape sequences are not allowed. Use the syntax '\x01'. (73:40)
+[error]   71 | }
+[error]   72 |
+[error] > 73 | $singular_rules = {["/(matr)ices$/"]: "\1ix", ["/(vert|ind)ices$/"]: "\1ex", ["/^(ox)en/"]: "\1", ["/(alias)es$/"]: "\1", ["/([octop|vir])i$/"]: "\1us", ["/(cris|ax|test)es$/"]: "\1is", ["/(shoe)s$/"]: "\1", ["/(o)es$/"]: "\1", ["/(bus|campus)es$/"]: "\1", ["/([m|l])ice$/"]: "\1ouse", ["/(x|ch|ss|sh)es$/"]: "\1", ["/(m)ovies$/"]: "\1\2ovie", ["/(s)eries$/"]: "\1\2eries", ["/([^aeiouy]|qu)ies$/"]: "\1y", ["/([lr])ves$/"]: "\1f", ["/(tive)s$/"]: "\1", ["/(hive)s$/"]: "\1", ["/([^f])ves$/"]: "\1fe", ["/(^analy)ses$/"]: "\1sis", ["/((a)naly|(b)a|(d)iagno|(p)arenthe|(p)rogno|(s)ynop|(t)he)ses$/"]: "\1\2sis", ["/([ti])a$/"]: "\1um", ["/(p)eople$/"]: "\1\2erson", ["/(m)en$/"]: "\1an", ["/(s)tatuses$/"]: "\1\2tatus", ["/(c)hildren$/"]: "\1\2hild", ["/(n)ews$/"]: "\1\2ews", ["/([^us])s$/"]: "\1"};
+[error]      |                                        ^
+[error]   74 | for (let $rule in $singular_rules) {
+[error]   75 | let $replacement = $singular_rules[$rule];
+[error]   76 | if(preg_match($rule, $result))
+[error] src/system/ci-system-v3/libraries/Tencent/auth.cm.com.php/index.ts: SyntaxError: '>' expected. (4:11)
+[error]   2 | <html>
+[error]   3 | <head>
+[error] > 4 |     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+[error]     |           ^
+[error]   5 |     <style type="text/css">
+[error]   6 |         p{margin-bottom:0px;}
+[error]   7 |     </style>
+[error] src/system/ci-system-v3/libraries/Xmlrpc.ts: SyntaxError: ')' expected. (301:64)
+[error]   299 | $op = "POST " + this.path + " HTTP/1.0" + $r + "Host: " + this.server + $r + "Content-Type: text/xml" + $r + (isset(this.username, this.password) ? "Authorization: Basic " + base64_encode(this.username + ":" + this.password) + $r : "") + "User-Agent: " + this.xmlrpcName + $r + "Content-Length: " + strlen($msg.payload) + $r + $r + $msg.payload;
+[error]   300 | for($timestamp = 0;
+[error] > 301 | $written = $timestamp,$length = strlen($op); $written < $length; $written += $result){
+[error]       |                                                                ^
+[error]   302 | if(($result = fwrite($fp, substr($op, $written))) === false)
+[error]   303 | {
+[error]   304 | break;
+[error] src/system/ci-system-v3/libraries/Xmlrpcs.ts: SyntaxError: ')' expected. (418:28)
+[error]   416 |     if ($call.kindOf() !== 'struct') {
+[error]   417 |       return this.multicall_error('notstruct');
+[error] > 418 |     } else if ((!$methName = $call.me['struct']['methodName'])) {
+[error]       |                            ^
+[error]   419 |       return this.multicall_error('nomethod');
+[error]   420 |     }
+[error]   421 |
+[error] src/system/ci-system-v3/libraries/Zip.ts: SyntaxError: ')' expected. (217:86)
+[error]   215 | flock($fp, LOCK_EX);
+[error]   216 | for($written = 0;
+[error] > 217 | $result = $written,$data = this.get_zip(),$length = strlen($data); $written < $length; $written += $result){
+[error]       |                                                                                      ^
+[error]   218 | if(($result = fwrite($fp, substr($data, $written))) === false)
+[error]   219 | {
+[error]   220 | break;
+[error] src/system/soa-idl/mchdoworkflowao_php5_stub.ts: SyntaxError: Hexadecimal digit expected. (2526:74)
+[error]   2524 | this._arr_value["startWFState"] = $bs.popUint32_t();
+[error]   2525 | this._arr_value["currentProcessInfoPo"] = $bs.popObject("\mmpay\mch\doworkflow\po\CurrentProcessInfoPo");
+[error] > 2526 | this._arr_value["listNodeInfo"] = $bs.popObject("stl_vector<\mmpay\mch\udworkflow\po\WorkflowNodeInfoPo>");
+[error]        |                                                                          ^
+[error]   2527 | this._arr_value["reserveOut"] = $bs.popString();
+[error]   2528 | }
+[error]   2529 | getCmdId(){
+[error] src/system/soa-idl/mchdoworkflowao_php5_xxoo.ts: SyntaxError: Hexadecimal digit expected. (626:32)
+[error]   624 |
+[error]   625 | namespace mmpay.mch.udworkflow.po {
+[error] > 626 | if( !class_exists("mmpay\mch\udworkflow\po\WorkflowNodeInfoPo", false))
+[error]       |                                ^
+[error]   627 | {
+[error]   628 | class WorkflowNodeInfoPo {
+[error]   629 | private  _arr_value = {};
+[error] src/system/soa-proto/php2proto/userdefine/Parent_page_bill_download_7ea6fd5d.ts: SyntaxError: '>' expected. (386:7)
+[error]   384 | {
+[error]   385 | $ret1 = $params;
+[error] > 386 | <?php goto breakHandler ?>;
+[error]       |       ^
+[error]   387 | }
+[error]   388 |
+[error]   389 | this.setParams($params);
+[error] src/system/soa-proto/php2proto/userdefine/Parent_page_bill_download_d93b0ad7.ts: SyntaxError: '>' expected. (142:7)
+[error]   140 | {
+[error]   141 | $ret1 = $params;
+[error] > 142 | <?php goto breakHandler ?>;
+[error]       |       ^
+[error]   143 | }
+[error]   144 |
+[error]   145 | this.setParams($params);
+[error] src/system/soa-proto/php2proto/userdefine/User_page_bill_download_d93b0ad7.ts: SyntaxError: Hexadecimal digit expected. (46:20)
+[error]   44 | if(isset($params["statement_mark"]))
+[error]   45 | {
+[error] > 46 | if(preg_match("/[\x{4e00}-\x{9fa5}]+/u", $params["statement_mark"]))
+[error]      |                    ^
+[error]   47 | {
+[error]   48 | $code = User_page_bill_download_d93b0ad7.STATEMENT_MARK_ERR_CODE;
+[error]   49 | $msg = User_page_bill_download_d93b0ad7.STATEMENT_MARK_ERR_MSG;
