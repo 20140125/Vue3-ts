@@ -231,7 +231,7 @@
 [error]   143 | }
 [error]   144 |
 [error]   145 | this.setParams($params);
-[error] src/system/soa-proto/php2proto/userdefine/User_page_bill_download_d93b0ad7.ts: SyntaxError: Hexadecimal digit expected. (46:20)
+[warning] src/system/soa-proto/php2proto/userdefine/User_page_bill_download_d93b0ad7.ts: SyntaxError: Hexadecimal digit expected. (46:20)
 [error]   44 | if(isset($params["statement_mark"]))
 [error]   45 | {
 [error] > 46 | if(preg_match("/[\x{4e00}-\x{9fa5}]+/u", $params["statement_mark"]))

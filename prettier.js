@@ -1,4 +1,5 @@
-const { readFileSync, writeFileSync } = require("fs-extra");
+const { readFileSync } = require("fs-extra");
+
 /**
  * 文件读取
  * @param filename
@@ -11,25 +12,50 @@ const readFile = (filename) => {
     console.log(e);
   }
 };
-
 /**
- * 文件写入
- * @param filename
+ * 日志上报
  * @param data
- * @returns {*}
  */
-const writeFile = (filename, data) => {
-  try {
-    return writeFileSync(filename, data, { encoding: "utf8", flag: "a+" });
-  } catch (e) {
-    console.log(e);
-  }
+const reportLog = (data) => {
+  console.log(data);
 };
 
+// 方法执行
+const errorRegRex = /[a-zA-Z]+Error/g;
+const lineRegRex = /\(\d+:\d+\)/g;
 const prettierLog = readFile("./prettier.log").toString();
-prettierLog.split(/[\r\n]/).forEach((item) => {
-  if (/SyntaxError/g.test(item)) {
-    // 内容上报
-    writeFile("./newPrettier.log", `${item}\n`);
+for (const item of prettierLog.split(/[\r\n]/)) {
+  if (errorRegRex.test(item)) {
+    const errorType = item.match(errorRegRex)[0];
+    const errorLine = item.match(lineRegRex)[0];
+    const errorInfo = item.split(": " + errorType + ":");
+    /**
+     * 16: 检验方式 (check_type)
+     * 17: 项目名称 (project)
+     * 18: 文件路径 (file_path)
+     * 19: 错误行数 (error_line)
+     * 20: 错误级别 (error_level)
+     * 21: 错误类型 (error_type).
+     * 22: 错误信息 (error_detail)
+     */
+    const data = {
+      16: "prettier",
+      17: "",
+      18: "",
+      19: errorLine,
+      20: 0,
+      21: errorType,
+      22: "",
+    };
+    if (/\[error\]/g.test(item)) {
+      data[18] = errorInfo[0].replace(/\[error\]/g, "").trim();
+      data[20] = 1;
+      data[22] = errorInfo[1].replace(lineRegRex, "").trim();
+    } else {
+      data[18] = errorInfo[0].replace(/\[warning\]/g, "").trim();
+      data[20] = 2;
+      data[22] = errorInfo[1].replace(lineRegRex, "").trim();
+    }
+    reportLog(data);
   }
-});
+}
