@@ -47,11 +47,11 @@ for (const item of prettierLog.split(/[\r\n]/)) {
       21: errorType,
       22: errorInfo[1].replace(lineRegRex, "").trim(),
     };
-    if (/\[error\]/g.test(item)) {
-      data[18] = errorInfo[0].replace(/\[error\]/g, "").trim();
+    if (/\[error\]/.test(item)) {
+      data[18] = errorInfo[0].replace(/\[error\]/, "").trim();
       data[20] = 1;
-    } else if (/\[warning\]/g.test(item)) {
-      data[18] = errorInfo[0].replace(/\[warning\]/g, "").trim();
+    } else if (/\[warning\]/.test(item)) {
+      data[18] = errorInfo[0].replace(/\[warning\]/, "").trim();
       data[20] = 2;
     }
     reportLog(data);
